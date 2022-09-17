@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <form>
+        <select  asp-items="Model.Items" ></select>
+        <input asp-for="@Model.order.Customer" />
+
+        <input asp-for="@Model.order.Product"/>
+
+        <input asp-for="@Model.order.OrderDate" />
+
+        <input asp-for="@Model.order.quantity"/>
+    </form>
+</div>
